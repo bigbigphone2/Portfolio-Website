@@ -65,7 +65,7 @@ const Navbar = () => {
           top += -50;
           break;
         case 'projects':
-          top += -0;
+          top += -50;
           break;
         default:
           top += 0;
@@ -142,24 +142,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
-
-{/* <MobileMenu isOpen={isOpenMenuBar}>
-<MobileLink href="#about" onClick={() => {
-  setIsOpenMenuBar(!isOpenMenuBar)
-}}>About</MobileLink>
-<MobileLink href='#skills' onClick={() => {
-  setIsOpenMenuBar(!isOpenMenuBar)
-}}>Skills</MobileLink>
-<MobileLink href='#experience' onClick={() => {
-  setIsOpenMenuBar(!isOpenMenuBar)
-}}>Experience</MobileLink>
-<MobileLink href='#projects' onClick={() => {
-  setIsOpenMenuBar(!isOpenMenuBar)
-}}>Projects</MobileLink>
-<MobileLink href='#education' onClick={() => {
-  setIsOpenMenuBar(!isOpenMenuBar)
-}}>Education</MobileLink>
-<GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
-<GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.linkedin} target="_blank">LinkedIn Profile</GitHubButton>
-</MobileMenu> */}

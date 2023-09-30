@@ -44,6 +44,7 @@ const Image = styled.img`
     background-color: ${({ theme }) => theme.white};
     border-radius: 10px;
     box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
+    object-fit: contain;
 `
 
 const Tags = styled.div`
@@ -153,17 +154,13 @@ const ProjectCards = ({project,setOpenModal}) => {
                 <br/>
                 <Skills>
                     <b>Skills:</b>
-                        <ItemWrapper>
-                            {project?.tags?.map((skill, index) => (
-                                <Skill key={index}>• {skill}</Skill>
-                            ))}
-                        </ItemWrapper>
-                    </Skills>
-                    {/* {project.tags?.map((tag, index) => (
-                    <Tag key={index}>{tag}</Tag>
-                    ))} */}
+                </Skills>
+                <ItemWrapper>
+                    {project?.tags?.map((skill, index) => (
+                        <Skill key={index}>• {skill}</Skill>
+                    ))}
+                </ItemWrapper>
                 </Tags>
-                {/* <Description>{project.description}</Description> */}
             </Details>
         </Card>
     )

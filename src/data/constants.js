@@ -284,6 +284,10 @@ export const education = [
           content: 'Arduino software coding, Matlab simulation for the solar panel.'
         },
         {
+          subTitle: 'Large scale project:',
+          content: 'Arduino automatic vehicle project, Mock algorithm trading with python.'
+        },
+        {
           subTitle: 'Final year project:',
           content: '"Training a robot to see and communicate" --- investigate the possibilities and limitation when adopting different latest object detection models into one of the most famous pre-built robot (NAO designed by SoftBank)',
         },
@@ -350,6 +354,48 @@ export const projects = [
       {
         title: 'Source Code',
         address: 'https://github.com/bigbigphone2/BigTwoGame'
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "Training a robot to see and communicate",
+    description: [
+      'Explored possibilities and limitations of integrating object detection models into the renowned NAO robot by SoftBank.'
+    ],
+    image: require('../images/nao.png'),
+    tags: [
+      "Python",
+      "Tensorflow",
+      "Linux"
+    ],
+    category: "web app",
+    links: [
+      {
+        title: 'Details',
+        address: 'https://drive.google.com/file/d/1jILEBS0tGNkRe-7FSYtKusFWTCU7qsrm/view?usp=sharing'
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "Arduino automatic vehicle",
+    description: [
+      'Developed a vehicle capable of driving straight with low-quality motors.',
+      'Implemented precise distance measurement during travel.',
+      'Enabling automatic steering in response to specific color signals.',
+      'Created an auto-parking system for wireless charging stations.',
+      'Designed a disinfection function with an alcohol spraying mechanism.'
+    ],
+    image: require('../images/arduino_car.jpeg'),
+    tags: [
+      "Arduino",
+    ],
+    category: "web app",
+    links: [
+      {
+        title: 'Demo video',
+        address: 'https://drive.google.com/file/d/1OvMWq3sPGyeoHTSIq73u85NknHGclBdc/view?usp=sharing'
       }
     ]
   },

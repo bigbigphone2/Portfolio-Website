@@ -4,31 +4,31 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
-background-color: #000000a7;
-display: flex;
-align-items: top;
-justify-content: center;
-overflow-y: scroll;
-transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000a7;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    overflow-y: scroll;
+    transition: all 0.5s ease;
 `;
 
 const Wrapper = styled.div`
-max-width: 800px;
-width: 100%;
-border-radius: 16px;
-margin: 50px 12px;
-height: min-content;
-background-color: ${({ theme }) => theme.card};
-color: ${({ theme }) => theme.text_primary};
-padding: 20px;
-display: flex;
-flex-direction: column;
-position: relative;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 16px;
+    margin: 50px 12px;
+    height: min-content;
+    background-color: ${({ theme }) => theme.card};
+    color: ${({ theme }) => theme.text_primary};
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 `;
 
 const Title = styled.div`
@@ -65,9 +65,17 @@ const Desc = styled.ul`
     }
 `;
 
-const Image = styled.img`
+const ImageContainer = styled.div`
     width: 100%;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+const Image = styled.img`
+    max-width: 600px;
+    max-height: 400px;
+    object-fit: contain;
     border-radius: 12px;
     margin-top: 30px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
@@ -146,7 +154,9 @@ const index = ({ openModal, setOpenModal }) => {
                         }}
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
-                    <Image src={project?.image} />
+                    <ImageContainer>
+                        <Image src={project?.image} />
+                    </ImageContainer>
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>
