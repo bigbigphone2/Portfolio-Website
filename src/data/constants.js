@@ -414,7 +414,7 @@ export const projects = [
     id: 1,
     title: "Poker Game (Big Two)",
     description: [
-      'Developed an captivating online poker game with strict adherence to Object-Oriented Programming (OOP) principles.',
+      'Developed a captivating online poker game with strict adherence to Object-Oriented Programming (OOP) principles.',
       'Utilized Java GUI for the interface and integrated Web Sockets to facilitate online multiplayer games for up to four players.'
     ],
     image:
