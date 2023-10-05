@@ -64,6 +64,11 @@ export const skills = [
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBMw6_RdwKQ9bDFfnKDX1iwMl4bVJEvd9PP53XuIw&s",
       },
+      {
+        name: "C++",
+        image:
+          "https://skillicons.dev/icons?i=cpp",
+      },
     ],
   },
   {
@@ -93,6 +98,11 @@ export const skills = [
         name: "React Native",
         image:
           require("../images/react-icon.png"),
+      },
+      {
+        name: "jQuery",
+        image:
+        "https://skillicons.dev/icons?i=jquery",
       },
       {
         name: "Webpack",
@@ -198,6 +208,11 @@ export const skills = [
           require("../images/gitlab-icon.png"),
       },
       {
+        name: "Jenkin",
+        image:
+        "https://skillicons.dev/icons?i=jenkins",
+      },
+      {
         name: "Figma",
         image:
           "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
@@ -248,6 +263,7 @@ export const experiences = [
       "Python",
       "JavaScript",
       "TypeScript",
+      "Java",
       "VBA",
       "Kafka",
       "Node JS",
@@ -261,11 +277,11 @@ export const experiences = [
     achievements: [
       "Redesign the company's market data database structure, increase the storage capacity by 20 times, and increase the data retrieval speed by 10 times.",
       'Developed a generic report generation module, reducing manual custom reporting by 30%.',
-      'Enhanced a React JS based Internal Market Watch web application by incorporating Excel-like features, enabling traders to manipulate and analyse data more effectively.',
+      'Enhanced a React JS, Node Js, Python & Java based Internal Market Watch web application by incorporating Excel-like features, enabling traders to manipulate and analyze data more effectively.',
       'Developed a microservice module using Python to handle CSV file-based integrations.',
       'Created a SQL workbench-like tool using React JS and Python that empowers middle office teams to efficiently modify static data for companies, leading to a significant threefold increase in processing speed.',
       'Participated in the successful transition of the entire IT infrastructure, shifting from virtual machines (VMs) to a Kubernetes-based architecture.'
-    ]
+    ],
   },
   {
     id: 1,
@@ -280,15 +296,22 @@ export const experiences = [
       "Next JS",
       "MUI",
       "React Native",
+      "Node JS",
       "Django",
       "PostgreSQL",
       "AWS",
     ],
     achievements: [
-      'Developed a coupon redemption system using Next JS, which significantly increased customer stickiness and attracted more enterprises to engage in collaborative partnerships.',
+      'Developed a coupon redemption system using Next JS and Node JS, significantly enhancing customer stickiness and attracting more enterprises to engage in collaborative partnerships.',
       'Developed selenium web crawlers to automate the scraping of digital marketing data, replacing the need for daily manual labor.',
       'Continuously improved features on a loan website using React JS and Django, resulting in a more user-friendly experience.',
       'Resolved bugs in a React Native based mobile loan application, enhancing user experience on mobile devices.',
+    ],
+    links: [
+      {
+        title: 'Company Website',
+        address: 'https://www.zwap.hk'
+      },
     ]
   },
   {
@@ -308,6 +331,12 @@ export const experiences = [
     achievements: [
       "Created a dashboard website using pure HTML, CSS, and JavaScript that seamlessly connects to the robot's API, allowing users to remotely control the robot and providing an intuitive interface for monitoring the robot's activities.",
       'Developed a work recording program using ROS and Python, enabling users to visualize the progress of robot tasks on a 3D map.'
+    ],
+    links: [
+      {
+        title: 'Company Website',
+        address: 'http://www.yaulee.com'
+      },
     ]
   }
 ];
@@ -385,7 +414,8 @@ export const projects = [
     id: 1,
     title: "Poker Game (Big Two)",
     description: [
-      'Developed a captivating online poker game using Java GUI for the interface, and implemented Web Sockets to enable four players to play together online.'
+      'Developed an captivating online poker game with strict adherence to Object-Oriented Programming (OOP) principles.',
+      'Utilized Java GUI for the interface and integrated Web Sockets to facilitate online multiplayer games for up to four players.'
     ],
     image:
       "https://github.com/bigbigphone2/BigTwoGame/raw/main/Screenshot%202021-12-13%20at%2010.12.58%20PM.png",
@@ -433,6 +463,7 @@ export const projects = [
     image: require('../images/arduino_car.jpeg'),
     tags: [
       "Arduino",
+      "C++"
     ],
     category: "web app",
     links: [

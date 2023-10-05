@@ -216,6 +216,11 @@ const index = ({ openModal, setOpenModal }) => {
                             <Achievement key={index}>{achievement}</Achievement>
                         ))}
                     </Achievements>
+                    <ButtonGroup>
+                        {experience?.links?.map((link, index) => 
+                            <Button key={index} href={link.address} target='new'>{link.title}</Button>
+                        )}
+                    </ButtonGroup>
                 </Wrapper>
             </Container>
 
