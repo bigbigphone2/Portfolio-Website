@@ -53,7 +53,7 @@ const Tags = styled.div`
     align-items: center;
     flex-wrap: wrap;
     gap: 8px;
-    margin-top: 4px;
+    margin-top: 20px;
 `
 
 const Tag = styled.span`
@@ -151,7 +151,7 @@ const ProjectCards = ({project,setOpenModal}) => {
             <Details>
                 <Title>{project.title}</Title>
                 <Tags>
-                <br/>
+                {/* <br/> */}
                 <Skills>
                     <b>Skills:</b>
                 </Skills>
