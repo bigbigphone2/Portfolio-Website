@@ -43,7 +43,7 @@ export const skills = [
       {
         name: "VBA",
         image:
-          "https://png2.cleanpng.com/sh/8ed0057545997a77e60c3720dd79245d/L0KzQYm3V8EzN6VufpH0aYP2gLBuTgZqe6ZmhJ9rYYPsc37tjCIuaaF1hNtsYYTsf7B6Tf1qa6N0i9HvdD3oiLTsjL1uaZR3RehyYnX1Pb32hB8uPZM5T9Q5OUbnRYnrhcEvOGI2T6Y7MES0RYS4VMI1QWI9UKk9Nz7zfri=/kisspng-visual-basic-for-applications-microsoft-excel-macr-viber-logo-5b47b096d58de1.0117420415314249188747.png",
+        require("../images/vba-icon.png"),
       },
       {
         name: "SQL",
