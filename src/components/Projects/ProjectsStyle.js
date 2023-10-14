@@ -91,6 +91,17 @@ export const CardContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    // // gap: 28px;
+    // flex-wrap: wrap;
+    
+`;
+
+export const CardInnerContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     gap: 28px;
     flex-wrap: wrap;
 `;

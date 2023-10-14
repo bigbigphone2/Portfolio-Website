@@ -1,12 +1,23 @@
 import styled from "styled-components";
 import _default from "../../themes/default";
 
+export const Container = styled.div`
+  background: ${({ theme }) => theme.card};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  flex-direction: column;
+`;
+
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card};
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
-  padding: 80px 30px;
+  padding: 30px 80px;
+  height: 90vh;
   @media (max-width: 960px) {
     padding: 66px 16px;
   }
@@ -31,7 +42,7 @@ export const HeroInnerContainer = styled.div`
   }
 `;
 export const HeroLeftContainer = styled.div`
-  width: 100%;
+  width: 500px;
   order: 1;
   @media (max-width: 960px) {
     order: 1;
@@ -72,19 +83,19 @@ export const Img = styled.img`
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 600px;
+  max-height: 600px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  // border: 2px solid ${({ theme }) => theme.primary};
 
   @media (max-width: 768px) {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 600px;
+    max-height: 600px;
   }
 
   @media (max-width: 640px) {
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 550px;
+    max-height: 550px;
   }
 `;
 
@@ -106,11 +117,11 @@ export const Title = styled.div`
 
 export const TextLoop = styled.div`
   font-weight: 600;
-  font-size: 32px;
+  font-size: 22px;
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
+  line-height: 40px;
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -150,7 +161,8 @@ export const ResumeButton = styled.a`
     width: 95%;
     max-width: 300px;
     text-align: center;
-    padding: 16px 0;
+    padding: 16px 20px;
+    margin: 10px 0px;
     color:${({ theme }) => theme.white};
     border-radius: 20px;
     cursor: pointer;
@@ -170,4 +182,16 @@ export const ResumeButton = styled.a`
         font-size: 18px;
     } 
 
+`;
+
+export const Icon = styled.a`
+  display: inline-block;
+  margin: 0 1rem;
+  color: ${({ theme }) => theme.text_primary};
+  cursor: pointer;
+  height: 5vh;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
 `;

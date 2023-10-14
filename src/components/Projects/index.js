@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider } from './ProjectsStyle'
+import { Container, Wrapper, Title, Desc, CardContainer, CardInnerContainer, ToggleButtonGroup, ToggleButton, Divider } from './ProjectsStyle'
 import ProjectCard from '../Cards/ProjectCards'
 import { projects } from '../../data/constants'
 
@@ -12,10 +12,12 @@ const Projects = ({openModal,setOpenModal}) => {
       <Wrapper>
         <Title>Projects</Title>
         <CardContainer>
-          {projects
-            .map((project) => (
-              <ProjectCard key={project.id} project={project} openModal={openModal} setOpenModal={setOpenModal}/>
-          ))}
+          <CardInnerContainer>
+            {projects
+              .map((project) => (
+                <ProjectCard key={project.id} project={project} openModal={openModal} setOpenModal={setOpenModal}/>
+            ))}
+          </CardInnerContainer>
         </CardContainer>
       </Wrapper>
     </Container>

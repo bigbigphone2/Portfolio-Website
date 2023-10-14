@@ -5,9 +5,13 @@ import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
 import { useTheme } from 'styled-components';
 
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+
+import handleScroll from '../../utils/handleScroll';
 
 const SocialMediaIcons = styled.div`
   width: 80%;  
@@ -32,9 +36,17 @@ const SocialMediaIcon = styled.a`
   }
 `;
 
+const MenuContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
 const Navbar = () => {
   const [isOpenMenuBar, setIsOpenMenuBar] = useState(false);
-  const [scrolling, setScrolling] = useState(false);
   const anchor = 'top';
   const toggleDrawer = (open) => (event) => {
     if (
@@ -47,41 +59,6 @@ const Navbar = () => {
 
     setIsOpenMenuBar(false);
   };
-  
-  useEffect(() => {
-    if (scrolling) {
-      let top = document.getElementById(scrolling).offsetTop;
-      switch (scrolling){
-        case 'about':
-          top += -60;
-          break;
-        case 'skills':
-          top += -60;
-          break;
-        case 'experience':
-          top += 0;
-          break;
-        case 'education':
-          top += -50;
-          break;
-        case 'projects':
-          top += -50;
-          break;
-        default:
-          top += 0;
-      }
-      window.scrollTo({
-        top: top,
-        behavior: 'smooth',
-      });
-      setScrolling(false);
-    }
-  }, [scrolling]);
-
-  const handleScroll = (targetId) => {
-    setScrolling(targetId);
-  };
-
 
   return (
     <Nav>
@@ -108,33 +85,36 @@ const Navbar = () => {
           onClose={toggleDrawer(false)}
           onOpen={toggleDrawer(true)}
         >
-          <MobileLink onClick={() => {
-            setIsOpenMenuBar(!isOpenMenuBar)
-            handleScroll('about')
-          }}>About</MobileLink>
-          <MobileLink onClick={() => {
-            setIsOpenMenuBar(!isOpenMenuBar)
-            handleScroll('skills')
-          }}>Skills</MobileLink>
-          <MobileLink onClick={() => {
-            setIsOpenMenuBar(!isOpenMenuBar)
-            handleScroll('experience')
-          }}>Experience</MobileLink>
-          <MobileLink onClick={() => {
-            setIsOpenMenuBar(!isOpenMenuBar)
-            handleScroll('education')
-          }}>Education</MobileLink>
-          <MobileLink onClick={() => {
-            setIsOpenMenuBar(!isOpenMenuBar)
-            handleScroll('projects')
-          }}>Projects</MobileLink>
-          {/*  */}
-          <MobileLink href={Bio.linkedin} onClick={() => {
-            setIsOpenMenuBar(!isOpenMenuBar)
-          }}>LinkedIn</MobileLink>
-          <MobileLink href={Bio.github} onClick={() => {
-            setIsOpenMenuBar(!isOpenMenuBar)
-          }}>GitHub</MobileLink>
+          <MenuContainer>
+            <MobileLink onClick={() => {
+              setIsOpenMenuBar(!isOpenMenuBar)
+              handleScroll('about')
+            }}>About</MobileLink>
+            <MobileLink onClick={() => {
+              setIsOpenMenuBar(!isOpenMenuBar)
+              handleScroll('skills')
+            }}>Skills</MobileLink>
+            <MobileLink onClick={() => {
+              setIsOpenMenuBar(!isOpenMenuBar)
+              handleScroll('experience')
+            }}>Experience</MobileLink>
+            <MobileLink onClick={() => {
+              setIsOpenMenuBar(!isOpenMenuBar)
+              handleScroll('education')
+            }}>Education</MobileLink>
+            <MobileLink onClick={() => {
+              setIsOpenMenuBar(!isOpenMenuBar)
+              handleScroll('projects')
+            }}>Projects</MobileLink>
+            {/*  */}
+            <MobileLink href={Bio.linkedin} onClick={() => {
+              setIsOpenMenuBar(!isOpenMenuBar)
+            }}>LinkedIn</MobileLink>
+            <MobileLink href={Bio.github} onClick={() => {
+              setIsOpenMenuBar(!isOpenMenuBar)
+            }}>GitHub</MobileLink>
+            <MobileLink onClick={()=>{setIsOpenMenuBar(!isOpenMenuBar)}}><HighlightOffIcon/></MobileLink>
+          </MenuContainer>
         </SwipeableDrawer>
       </NavbarContainer>
     </Nav>

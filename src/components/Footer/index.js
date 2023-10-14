@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Bio } from '../../data/constants';
 import EjectIcon from '@mui/icons-material/Eject';
 import { Button } from '@mui/material';
+import handleScroll from '../../utils/handleScroll';
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -37,13 +38,6 @@ const Icon = styled.a`
 `;
 
 function Footer() {
-
-  const handleScroll = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
 
   return (
     <FooterContainer>
