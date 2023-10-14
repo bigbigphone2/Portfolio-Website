@@ -42,7 +42,7 @@ export const HeroInnerContainer = styled.div`
   }
 `;
 export const HeroLeftContainer = styled.div`
-  width: 500px;
+  width: 520px;
   order: 1;
   @media (max-width: 960px) {
     order: 1;
