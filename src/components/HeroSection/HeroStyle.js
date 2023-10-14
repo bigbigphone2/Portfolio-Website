@@ -83,19 +83,19 @@ export const Img = styled.img`
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 600px;
-  max-height: 600px;
-  border-radius: 50%;
+  max-width: 400px;
+  max-height: 400px;
+  // border-radius: 10%;
   // border: 2px solid ${({ theme }) => theme.primary};
 
   @media (max-width: 768px) {
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   @media (max-width: 640px) {
-    max-width: 550px;
-    max-height: 550px;
+    max-width: 250px;
+    max-height: 250px;
   }
 `;
 
