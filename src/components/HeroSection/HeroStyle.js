@@ -122,6 +122,7 @@ export const TextLoop = styled.div`
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 40px;
+  margin-bottom: 20px;
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -162,7 +163,7 @@ export const ResumeButton = styled.a`
     max-width: 300px;
     text-align: center;
     padding: 16px 20px;
-    margin: 10px 0px;
+    // margin: 10px 0px;
     color:${({ theme }) => theme.white};
     border-radius: 20px;
     cursor: pointer;
