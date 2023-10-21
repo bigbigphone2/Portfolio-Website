@@ -421,6 +421,8 @@ export const projects = [
       "https://github.com/bigbigphone2/BigTwoGame/raw/main/Screenshot%202021-12-13%20at%2010.12.58%20PM.png",
     tags: [
       "Java",
+      "Swing",
+      "Websocket"
     ],
     category: "web app",
     links: [
@@ -432,6 +434,31 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Sudoku Game",
+    description: [
+      'Developed a web sudoku game using React JS',
+      'Adopted backtracking algorithm in the game to solve any valid sudoku.'
+    ],
+    image: require('../images/sudoku.png'),
+    tags: [
+      "React JS",
+      "CSS",
+      "Algorithm"
+    ],
+    category: "web app",
+    links: [
+      {
+        title: 'Source Code',
+        address: 'https://github.com/bigbigphone2/sudoku-solver'
+      },
+      {
+        title: 'Website',
+        address: 'https://sudoku-solver-eta-sage.vercel.app/'
+      }
+    ]
+  },
+  {
+    id: 3,
     title: "Training a robot to see and communicate",
     description: [
       'Explored possibilities and limitations of integrating object detection models into the renowned NAO robot by SoftBank.'
@@ -451,7 +478,7 @@ export const projects = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: "Arduino automatic vehicle",
     description: [
       'Developed a vehicle capable of driving straight with low-quality motors.',
