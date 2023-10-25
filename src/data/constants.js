@@ -383,10 +383,10 @@ export const projects = [
     title: "Console Game Selling Platform",
     description: [
       'Developed an intuitive Next JS application with a Web 3.0 style interface for the purpose of selling second- hand games.',
-      'Engineered the back-end system using Spring Boot, hosting it in EC2 on AWS and using both S3 and PostgreSQL as the storage.'
+      'Engineered the back-end system using Spring Boot, hosting it in Render and using both Supabase and PostgreSQL as the storage.'
     ],
     image:
-      "https://github.com/C-M-limited/backend-gamehub/blob/main/README_IMG/Profile.png?raw=true",
+      require("../images/gamehub.png"),
     tags: [
       "TypeScript",
       "Java",
@@ -407,6 +407,10 @@ export const projects = [
       {
         title: 'Source Code (Backend)',
         address: 'https://github.com/C-M-limited/backend-gamehub'
+      },
+      {
+        title: 'Website',
+        address: 'https://stupendous-stroopwafel-452aba.netlify.app'
       },
     ]
   },
