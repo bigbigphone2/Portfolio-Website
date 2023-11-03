@@ -380,9 +380,9 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Console Game Selling Platform",
+    title: "GameHub",
     description: [
-      'Developed an intuitive Next JS application with a Web 3.0 style interface for the purpose of selling second- hand games.',
+      'Developed an intuitive Next JS application with a Web 3.0 style interface for the purpose of selling second-hand games.',
       'Engineered the back-end system using Spring Boot, hosting it in Render and using both Supabase and PostgreSQL as the storage.'
     ],
     image:
@@ -438,6 +438,33 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Character GPT",
+    description: [
+      "Enabled tailored responses for varied audiences while simplifying role assignment, saving time, and ensuring consistency.",
+      'Utilized React JS and OpenAI API to achieve a ChatCPT clone.'
+    ],
+    image:
+      require("../images/characterGPT.png"),
+    tags: [
+      "TypeScript",
+      "React JS",
+      "MUI",
+      "OpenAI Api"
+    ],
+    category: "web app",
+    links: [
+      {
+        title: 'Source Code',
+        address: 'https://github.com/bigbigphone2/Character-GPT'
+      },
+      {
+        title: 'Website',
+        address: 'https://character-9qzxvm3ip-bigbigphone2s-projects.vercel.app/'
+      }
+    ]
+  },
+  {
+    id: 3,
     title: "Sudoku Game",
     description: [
       'Developed a web sudoku game using React JS',
@@ -445,6 +472,7 @@ export const projects = [
     ],
     image: require('../images/sudoku.png'),
     tags: [
+      "JavaScript",
       "React JS",
       "CSS",
       "Algorithm"
@@ -462,7 +490,7 @@ export const projects = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: "Training a robot to see and communicate",
     description: [
       'Explored possibilities and limitations of integrating object detection models into the renowned NAO robot by SoftBank.'
@@ -482,7 +510,7 @@ export const projects = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     title: "Arduino automatic vehicle",
     description: [
       'Developed a vehicle capable of driving straight with low-quality motors.',
