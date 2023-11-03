@@ -15,6 +15,8 @@ import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
 import ReactGA from 'react-ga';
 
+import { Analytics } from '@vercel/analytics/react';
+
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -37,6 +39,7 @@ function App() {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Analytics/>;
       <Router >
         <Navbar />
         <Body>
