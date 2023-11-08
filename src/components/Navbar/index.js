@@ -8,6 +8,7 @@ import { useTheme } from 'styled-components';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -72,6 +73,7 @@ const Navbar = () => {
           <NavLink onClick={() => handleScroll('projects')}>Projects</NavLink>
         </NavItems>
         <SocialMediaIcons>
+          <SocialMediaIcon href={Bio.portfoiloGame} target="display"><VideogameAssetIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.github} target="display"><GitHubIcon /></SocialMediaIcon>
         </SocialMediaIcons>
@@ -107,6 +109,9 @@ const Navbar = () => {
               handleScroll('projects')
             }}>Projects</MobileLink>
             {/*  */}
+            <MobileLink href={Bio.portfoiloGame} onClick={() => {
+              setIsOpenMenuBar(!isOpenMenuBar)
+            }}>Portfoilo Game</MobileLink>
             <MobileLink href={Bio.linkedin} onClick={() => {
               setIsOpenMenuBar(!isOpenMenuBar)
             }}>LinkedIn</MobileLink>

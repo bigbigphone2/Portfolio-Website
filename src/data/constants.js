@@ -14,6 +14,8 @@ export const Bio = {
   github: "https://github.com/bigbigphone2",
   resume: "https://drive.google.com/file/d/1WMuEvBOnKK89nAqQGVgnRn_6yYr5RNuO/view?usp=sharing",
   linkedin: "http://linkedin.com/in/yat-hei-lee",
+  portfoilo: "https://www.yatheilee.xyz/",
+  portfoiloGame: "https://portfolio-game-three.vercel.app",
 };
 
 export const skills = [
@@ -394,7 +396,6 @@ export const projects = [
       "MUI",
       "Spring Boot",
       "Redis",
-      "React Js",
       "PostgreSQL",
       "AWS",
     ],
@@ -463,8 +464,34 @@ export const projects = [
       }
     ]
   },
+	{
+		id: 3,
+		title: "Portfolio Game",
+		nickname: "ThisGame",
+		description: [
+			'Crafted a 2D web game engine using TypeScript, React JS, Material UI',
+			'Offering an engaging journey to explore my personal experiences.'
+		],
+		image: require('../images/portfolioGame.png'),
+		tags: [
+			"TypeScript",
+			"React JS",
+			"MUI"
+		],
+		category: "web app",
+		links: [
+			{
+				title: 'Source Code',
+				address: 'https://github.com/bigbigphone2/Portfolio-Game'
+			},
+			{
+				title: 'Website',
+				address: 'https://portfolio-game-three.vercel.app'
+			}
+		]
+	},
   {
-    id: 3,
+    id: 4,
     title: "Sudoku Game",
     description: [
       'Developed a web sudoku game using React JS',
@@ -490,7 +517,7 @@ export const projects = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     title: "Training a robot to see and communicate",
     description: [
       'Explored possibilities and limitations of integrating object detection models into the renowned NAO robot by SoftBank.'
@@ -510,7 +537,7 @@ export const projects = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     title: "Arduino automatic vehicle",
     description: [
       'Developed a vehicle capable of driving straight with low-quality motors.',
