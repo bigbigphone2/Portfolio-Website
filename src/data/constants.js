@@ -1,6 +1,6 @@
 export const Bio = {
   name: [
-    "Yat Hei Lee"
+    "Chris Lee"
   ],
   roles: [
     "Full Stack Developer",
