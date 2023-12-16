@@ -13,7 +13,6 @@ import Education from "./components/Education";
 import ExperienceDetails from "./components/ExperienceDetails";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
-import ReactGA from 'react-ga';
 
 import { Analytics } from '@vercel/analytics/react';
 
@@ -32,10 +31,6 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [openExperienceDetail, setOpenExperienceDetail] = useState({ state: false, experience: null });
   const [openProjectDetail, setOpenProjectDetail] = useState({ state: false, project: null });
-
-  useEffect(()=> {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
